@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,700;1,900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  min-height: 100vh;
+  background: linear-gradient(62deg, #ffb500 30%, #111111 30%);
+  font-family: "Poppins", sans-serif;
+  cursor: url("/water-drop-svgrepo-com.svg"), url("custom.cur"), default;
+}
+
+.bodyWhite {
+  background: white;
+}
+
+.color {
+  color: black !important;
+}
+
+.color2 {
+  color: white;
+}
+
+.all {
+  position: relative;
+  animation: bodyAnim 0.9s cubic-bezier(0.77, 0, 0.175, 1) both;
+  animation-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-name: anim;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: bodyAnim 0.9s cubic-bezier(0.77, 0, 0.175, 1) both;
+}
+
+@keyframes bodyAnim {
+  from {
+    transform: translateY(80px);
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+  }
+  to {
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+  }
+}
+
+.bg {
+  width: auto;
+  height: 450px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.span1 {
+  position: relative;
+}
+
+.span1::before {
+  display: inline-block;
+  content: "";
+  border-top: 0.3rem solid #ffc107;
+  width: 3rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+
+.lineHeight {
+  line-height: 1.7em;
+}
+
+.middleArea h1 {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+.middleArea p {
+  margin: 15px 0 28px;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.middleArea button {
+  background: transparent;
+  border: 1px solid #ffc107;
+  position: relative;
+  overflow: hidden;
+}
+
+.middleArea button::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -110%;
+  content: "";
+  background-color: #ffb500;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  z-index: -2;
+}
+
+.middleArea button:hover::before {
+  right: 0;
+}
+
+.modalButton button {
+  background: transparent;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.modalButton button::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -110%;
+  content: "";
+  background-color: #ffb500;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  z-index: 1;
+}
+
+.modalButton button:hover::before {
+  right: 0;
+}
+
+.modalButton button:hover,
+span,
+i {
+  z-index: 5;
+}
+
+.bulb {
+  background-color: #2b2a2a;
+  color: white;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.button {
+  background-color: #2b2a2a;
+  color: white;
+  text-decoration: none;
+  border-radius: 60px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  max-width: 52px;
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+  transition: max-width 600ms ease-in-out;
+  -webkit-transition: max-width 600ms ease-in-out;
+  -moz-transition: max-width 600ms ease-in-out;
+  -ms-transition: max-width 600ms ease-in-out;
+  -o-transition: max-width 600ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #ffc107;
+  max-width: 300px;
+}
+
+.icon {
+  color: white;
+  font-size: 18px;
+  margin-right: 15px;
+  padding: 0px 15px;
+}
+
+.tekst {
+  white-space: nowrap;
+  padding-right: 15px;
+  color: white;
+}
+
+.navBar {
+  background-color: #2b2a2a;
+  z-index: 9;
+}
+
+.navBar .x1:hover,
+.aktiv {
+  background-color: #ffc107 !important;
+  transition: 300ms ease-in-out;
+  -webkit-transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  -ms-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+}
+
+.x1 {
+  background-color: #444444;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: white;
+  width: 22px;
+  height: 22px;
+}
+
+/* ?CUSTOM SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(90, 90, 90);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(103, 103, 103);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dadada;
+}
+/* ?CUSTOM SCROLLBAR */
+
+/* ?CUSTOM SELECTION */
+
+::selection {
+  color: white;
+  background: #cfa144;
+}
+/* ?CUSTOM SELECTION */
+
+.resume1 {
+  font-weight: bold;
+  font-size: 7rem;
+}
+
+/* * Responsiveness */
+
+@media (min-width: 991.98px) {
+  /* ! ANIMATION ----- AREA */
+
+  .cover {
+    background-color: #252525;
+    position: absolute;
+    height: 640px;
+    max-width: 100%;
+    z-index: 99;
+    animation: anim 1s cubic-bezier(0.77, 0, 0.175, 1) both;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-name: anim;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-animation: anim 1s cubic-bezier(0.77, 0, 0.175, 1) both;
+  }
+
+  @keyframes anim {
+    from {
+      height: 800px;
+    }
+    to {
+      height: 0px;
+    }
+  }
+
+  /* ! ANIMATION AREA */
+}
+
+@media (max-width: 991.98px) {
+  body {
+    background: linear-gradient(60deg, #111111 30%, #111111 30%);
+  }
+  .image {
+    border-radius: 50% !important;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 20px solid #252525;
+    margin: 0 auto 25px;
+    display: block;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+  }
+
+  .span1::before {
+    display: none;
+  }
+
+  /* ! ANIMATION --- AREA */
+
+  .cover {
+    background-color: #252525;
+    position: absolute;
+    height: 1000px;
+    max-width: 100%;
+    z-index: 99;
+    animation: anim 1s cubic-bezier(0.77, 0, 0.175, 1) both;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-name: anim;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    -webkit-animation: anim 1s cubic-bezier(0.77, 0, 0.175, 1) both;
+  }
+
+  @keyframes anim {
+    from {
+      height: 1000px;
+    }
+    to {
+      height: 0px;
+    }
+  }
+}

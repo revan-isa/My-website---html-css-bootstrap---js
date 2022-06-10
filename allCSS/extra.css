@@ -1,0 +1,23 @@
+.contactBody {
+  background-color: #111111;
+}
+
+.zoom {
+  overflow: hidden;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card img {
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.5);
+}
